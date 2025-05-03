@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MovieDetail from "./pages/MovieDetail";
 import NotFound from "./pages/NotFound";
+import CineMateButton from "./components/cinemate/CineMateButton";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <CineMateButton />
     </TooltipProvider>
   </QueryClientProvider>
 );
