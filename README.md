@@ -1,63 +1,77 @@
-# Welcome to your Lovable project
+# CineMate - Your AI Movie Companion
 
-## Project info
+## Project Description
 
-**URL**: https://lovable.dev/projects/d2e3198b-e6dc-408e-addc-155417c970bf
+CineMate is a personalized movie recommendation web application that uses AI to suggest movies based on your mood and preferences. Whether you're looking for trending hits, top-rated classics, or hidden gems, CineMate helps you discover the perfect film to match your current state of mind. Create custom watch-later plans and explore curated movie lists tailored just for you.
 
-## How can I edit this code?
+## Main Features
 
-There are several ways of editing your application.
+- Personalized movie recommendations based on your mood and preferences
+- Browse featured, trending, top-rated, and recently added movies
+- Interactive AI companion (CineMateChat) to help you find movies
+- Custom watch-later plans with curated films
+- Responsive and modern UI built with shadcn-ui and Tailwind CSS
 
-**Use Lovable**
+## Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d2e3198b-e6dc-408e-addc-155417c970bf) and start prompting.
+- `src/pages/`: Contains main pages like the home page (Index), movie detail pages, and a 404 NotFound page
+- `src/components/`: Reusable UI components including layout (Navbar, Footer), shared components (HeroSection, MovieCarousel), and CineMate-specific components (CineMateButton, CineMateChat)
+- `src/hooks/`: Custom React hooks
+- `src/data/`: Mock movie data used for demonstration
+- `src/lib/`: Utility functions
+- `public/`: Static assets like images and icons
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js and npm installed (recommend using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation and Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server with hot reload
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open your browser and visit `http://localhost:5173` (or the port shown in your terminal) to see the app in action.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build and Preview
 
-**Use GitHub Codespaces**
+```sh
+# Build the production version
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview the production build locally
+npm run preview
+```
 
-## What technologies are used for this project?
+## How to Edit the Code
 
-This project is built with:
+You can edit the code in several ways:
+
+
+- **Use your preferred IDE**: Clone the repo and push changes. Requires Node.js & npm installed.
+
+- **Edit files directly in GitHub**: Navigate to files, click the "Edit" button, make changes, and commit.
+
+- **Use GitHub Codespaces**: Launch a Codespace environment from the repo and edit files directly.
+
+## Technologies Used
 
 - Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
-
-
+- shadcn-ui (Radix UI components)
+- React Router
+- React Query
